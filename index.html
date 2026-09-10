@@ -78,62 +78,59 @@
 }
 </script>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 
 <style>
 :root {
-  --ink: #1a1d23;
-  --ink-secondary: #4a4e57;
-  --paper: #f7f6f3;
-  --paper-deep: #efeee9;
-  --accent: #2d5f8a;
-  --accent-light: #e8f0f7;
-  --accent-wash: #d4e4f0;
-  --muted: #6b7280;
-  --border: #d5d1cb;
-  --border-light: #e8e5df;
-  --code-bg: #f0ede8;
-  --tag-bg: #e8e5df;
-  --tag-text: #4a4e57;
-  --success: #2a7d4f;
-  --serif: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --ink: #2c2a25;
+  --ink-secondary: #5c5850;
+  --paper: #faf8f4;
+  --paper-deep: #f2efe8;
+  --accent: #8b6f47;
+  --accent-light: #f3ece0;
+  --accent-wash: #e8dcc8;
+  --muted: #8c8579;
+  --border: #ddd8cf;
+  --border-light: #eae6de;
+  --tag-bg: #eee9e0;
+  --tag-text: #5c5850;
+  --success: #5a7a4e;
+  --serif: 'Lora', 'Georgia', 'Times New Roman', serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --ink: #e4e2dd;
-    --ink-secondary: #a8a5a0;
-    --paper: #181a1e;
-    --paper-deep: #1e2026;
-    --accent: #6da3d4;
-    --accent-light: #1e2a38;
-    --accent-wash: #243040;
-    --muted: #8a8d94;
-    --border: #333640;
-    --border-light: #282b33;
-    --code-bg: #1e2026;
-    --tag-bg: #282b33;
-    --tag-text: #a8a5a0;
-    --success: #4aad6f;
+    --ink: #e3dfd7;
+    --ink-secondary: #b0a99e;
+    --paper: #1a1916;
+    --paper-deep: #22211d;
+    --accent: #c4a574;
+    --accent-light: #2a2418;
+    --accent-wash: #342c1e;
+    --muted: #908880;
+    --border: #3a3630;
+    --border-light: #2e2b26;
+    --tag-bg: #2e2b26;
+    --tag-text: #b0a99e;
+    --success: #7da06a;
   }
 }
 :root[data-theme="dark"] {
-  --ink: #e4e2dd;
-  --ink-secondary: #a8a5a0;
-  --paper: #181a1e;
-  --paper-deep: #1e2026;
-  --accent: #6da3d4;
-  --accent-light: #1e2a38;
-  --accent-wash: #243040;
-  --muted: #8a8d94;
-  --border: #333640;
-  --border-light: #282b33;
-  --code-bg: #1e2026;
-  --tag-bg: #282b33;
-  --tag-text: #a8a5a0;
-  --success: #4aad6f;
+  --ink: #e3dfd7;
+  --ink-secondary: #b0a99e;
+  --paper: #1a1916;
+  --paper-deep: #22211d;
+  --accent: #c4a574;
+  --accent-light: #2a2418;
+  --accent-wash: #342c1e;
+  --muted: #908880;
+  --border: #3a3630;
+  --border-light: #2e2b26;
+  --tag-bg: #2e2b26;
+  --tag-text: #b0a99e;
+  --success: #7da06a;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -143,61 +140,73 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   font-size: 15px;
-  line-height: 1.65;
-  max-width: 780px;
+  line-height: 1.7;
+  max-width: 740px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
+  padding: 3.5rem 1.5rem 4rem;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ── HEADER / HERO ── */
 .header {
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header__rule {
+  width: 3rem;
+  height: 1px;
+  background: var(--accent);
+  border: none;
+  margin: 1.5rem auto;
 }
 
 .header__eyebrow {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .header__name {
   font-family: var(--serif);
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: clamp(2rem, 5vw, 2.6rem);
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.35rem;
   text-wrap: balance;
 }
 
 .header__title {
   font-family: var(--serif);
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--ink-secondary);
-  margin: 0 0 1.25rem;
+  margin: 0;
 }
 
 .header__summary {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--ink-secondary);
-  line-height: 1.7;
-  max-width: 62ch;
+  line-height: 1.75;
+  max-width: 58ch;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .header__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
+  justify-content: center;
+  gap: 0.4rem 1.1rem;
   margin-top: 1.25rem;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
 }
 
 .header__links a {
@@ -206,78 +215,125 @@ body {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
   transition: color 0.15s;
 }
-.header__links a:hover { text-decoration: underline; }
+.header__links a:hover { color: var(--ink); }
 .header__links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 .header__links svg {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
 }
 
 /* ── KEY METRICS ── */
 .metrics {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
   margin-bottom: 2.5rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .metric {
-  background: var(--paper);
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 0.75rem;
+  text-align: center;
+  position: relative;
+}
+
+.metric + .metric::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: var(--border-light);
 }
 
 .metric__value {
-  font-family: var(--sans);
-  font-size: 1.5rem;
+  font-family: var(--serif);
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
 }
 
 .metric__label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-top: 0.25rem;
+  margin-top: 0.3rem;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  height: 0;
+  border-top: 1px solid var(--border-light);
+  margin: 0;
+}
+
+.divider--accent {
+  border-top-color: var(--accent);
+  width: 2.5rem;
+  margin: 2.5rem auto;
 }
 
 /* ── SECTIONS ── */
 .section {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
+  margin-bottom: 0;
+  padding: 2.5rem 0;
   border-bottom: 1px solid var(--border-light);
 }
-.section:last-child { border-bottom: none; }
+.section:last-of-type { border-bottom: none; }
 
 .section__label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .section__heading {
   font-family: var(--serif);
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.35;
   margin: 0 0 1rem;
   text-wrap: balance;
 }
+
+.section p,
+.section ul {
+  font-size: 0.93rem;
+  color: var(--ink-secondary);
+  line-height: 1.75;
+}
+
+.section ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.section li { margin-bottom: 0.2rem; }
+
+.section a.inline-link {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+.section a.inline-link:hover { border-bottom-color: var(--accent); }
 
 /* ── PROJECT ENTRIES ── */
 .project {
@@ -292,12 +348,12 @@ body {
   align-items: baseline;
   gap: 0.75rem;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .project__name {
   font-family: var(--serif);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin: 0;
 }
@@ -305,13 +361,15 @@ body {
 .project__name a {
   color: var(--ink);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
 }
-.project__name a:hover { color: var(--accent); }
+.project__name a:hover { border-bottom-color: var(--accent); }
 .project__name a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 .project__lang {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 500;
   color: var(--muted);
   letter-spacing: 0.04em;
@@ -321,25 +379,25 @@ body {
   font-size: 0.9rem;
   color: var(--ink-secondary);
   margin-bottom: 0.6rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .project__stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .tag {
   display: inline-block;
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.03em;
   padding: 0.2rem 0.5rem;
   background: var(--tag-bg);
   color: var(--tag-text);
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .tag--accent {
@@ -368,9 +426,11 @@ body {
 }
 
 .contrib-table td {
-  padding: 0.6rem 0.75rem 0.6rem 0;
+  padding: 0.55rem 0.75rem 0.55rem 0;
   border-bottom: 1px solid var(--border-light);
   vertical-align: top;
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
 }
 
 .contrib-table tr:last-child td { border-bottom: none; }
@@ -384,6 +444,7 @@ body {
 .contrib-table a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 .contrib-count {
+  font-family: var(--serif);
   font-weight: 600;
   color: var(--ink);
 }
@@ -392,25 +453,42 @@ body {
 
 /* ── PUBLICATION LIST ── */
 .pub {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1rem;
   padding-left: 1rem;
   border-left: 2px solid var(--border-light);
 }
 
 .pub__title {
-  font-weight: 600;
+  font-family: var(--serif);
+  font-weight: 500;
   font-size: 0.95rem;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
+  line-height: 1.5;
 }
 
-.pub__venue {
-  font-size: 0.85rem;
-  color: var(--muted);
+.pub__title a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
 }
+.pub__title a:hover { border-bottom-color: var(--accent); }
+
+.pub__venue {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.pub__venue a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.pub__venue a:hover { text-decoration: underline; }
 
 .pub__cite {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 500;
   color: var(--success);
   margin-left: 0.5rem;
@@ -426,7 +504,7 @@ body {
 
 .award__year {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 500;
   color: var(--muted);
   flex-shrink: 0;
@@ -434,6 +512,7 @@ body {
 }
 
 .award__text {
+  font-family: var(--serif);
   font-size: 0.95rem;
 }
 
@@ -441,6 +520,7 @@ body {
   font-size: 0.85rem;
   color: var(--muted);
   font-style: italic;
+  line-height: 1.6;
 }
 
 /* ── EXPERTISE GRID ── */
@@ -452,7 +532,7 @@ body {
 
 .expertise__category {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -472,14 +552,28 @@ body {
   color: var(--ink-secondary);
 }
 
+/* ── MEDIA SUBHEADING ── */
+.media-sub {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 2rem 0 0.75rem;
+}
+
 /* ── FOOTER ── */
 .footer {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
-  font-size: 0.8rem;
-  color: var(--muted);
   text-align: center;
+}
+
+.footer p {
+  font-family: var(--serif);
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 .footer a {
@@ -492,8 +586,9 @@ body {
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   body { padding: 2rem 1rem 3rem; }
-  .metrics { grid-template-columns: repeat(2, 1fr); }
-  .header__links { flex-direction: column; gap: 0.5rem; }
+  .metrics { grid-template-columns: repeat(3, 1fr); }
+  .metric + .metric:nth-child(4)::before { display: none; }
+  .header__links { flex-direction: column; align-items: center; gap: 0.5rem; }
   .project__header { flex-direction: column; gap: 0.25rem; }
   .award { flex-direction: column; gap: 0.15rem; }
 }
@@ -514,6 +609,7 @@ body {
   <div class="header__eyebrow">Software Engineer · Researcher · Open-Source Author</div>
   <h1 class="header__name">Timur Rakhmatullin</h1>
   <p class="header__title">Senior Software Engineer — Distributed Systems & Data Pipelines</p>
+  <hr class="header__rule">
   <p class="header__summary">
     I build real-time data pipelines and backend systems that serve millions of users.
     Professional experience across Java, Kotlin, Python, Rust, and Go.
@@ -573,13 +669,13 @@ body {
 <!-- CURRENT ROLE -->
 <section class="section">
   <div class="section__label">Current Role · Sep 2026 – Present</div>
-  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.softlinesolutions.com" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Softline Solutions</a></h2>
+  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.softlinesolutions.com" target="_blank" rel="noopener" class="inline-link">Softline Solutions</a></h2>
   <p>
     Building the GCP-based data platform behind a performance marketing agency running paid search,
     paid social, programmatic, SEO, and e-commerce across <strong>1,500+ client accounts</strong>.
     Agency Services, Data group. Los Angeles, CA.
   </p>
-  <ul style="margin: 0.75rem 0 0; padding-left: 1.25rem; color: var(--ink-secondary); font-size: 0.95rem; line-height: 1.7;">
+  <ul>
     <li>Architect ingestion pipelines on Google Cloud (Pub/Sub → Cloud Functions → BigQuery) — 15+ platform connectors feeding a unified analytics layer at 3+ GB/day</li>
     <li>Build high-load backend services in Kotlin and Java (Spring Boot, Ktor) with async processing, backpressure, and idempotent writes across multi-tenant workloads</li>
     <li>Engineer the connector framework for marketing APIs: incremental sync, rate-limit management, schema evolution, dead-letter recovery, and failure isolation</li>
@@ -592,12 +688,12 @@ body {
 <!-- PREVIOUS EXPERIENCE -->
 <section class="section">
   <div class="section__label">Previous Experience</div>
-  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.mytona.com" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">MyTona</a></h2>
+  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.mytona.com" target="_blank" rel="noopener" class="inline-link">MyTona</a></h2>
   <p>
     Gaming company behind <strong>Cooking Diary</strong> (22M+ downloads) and <strong>Seekers Notes</strong>.
     Backend architecture, real-time data pipelines, and AI/ML infrastructure.
   </p>
-  <ul style="margin: 0.75rem 0 0; padding-left: 1.25rem; color: var(--ink-secondary); font-size: 0.95rem; line-height: 1.7;">
+  <ul>
     <li>Architected real-time ingestion for 50M+ daily game events using Java/Kotlin, Apache Kafka and Flink; built a scalable data lake on AWS S3 with Apache Spark — 99.9% uptime, 30% improvement in KPI accuracy</li>
     <li>Designed a custom data visualization portal (Tableau-like) and internal tools for QA, Support, HR, and Game Testers — unified telemetry across departments</li>
     <li>Architected agentic AI workflows and RAG systems using LangChain, LangGraph, Langfuse; built custom MCP servers providing LLMs with real-time context from PostgreSQL and Redshift</li>
@@ -749,7 +845,7 @@ body {
       </tbody>
     </table>
   </div>
-  <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem;">
+  <p style="font-size: 0.82rem; color: var(--muted); margin-top: 0.75rem; font-style: italic;">
     Additional 7 pull requests currently under review across Debezium, vLLM, and Quarkus.
   </p>
 </section>
@@ -962,19 +1058,19 @@ body {
   <h2 class="section__heading">Published on Dev.to</h2>
 
   <div class="pub">
-    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">TraceShrink: Cost-Aware OTel Trace Sampling</a></div>
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener">TraceShrink: Cost-Aware OTel Trace Sampling</a></div>
     <div class="pub__venue">dev.to · 2026</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">PromptFirewall: Rule-Based Prompt Injection Detection in Rust</a></div>
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener">PromptFirewall: Rule-Based Prompt Injection Detection in Rust</a></div>
     <div class="pub__venue">dev.to · 2026</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">LogCompress: Semantic Log Compression for Incident Response</a></div>
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener">LogCompress: Semantic Log Compression for Incident Response</a></div>
     <div class="pub__venue">dev.to · 2026</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">CodeShrink: LLM-Optimized Code Compression</a></div>
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener">CodeShrink: LLM-Optimized Code Compression</a></div>
     <div class="pub__venue">dev.to · 2026</div>
   </div>
 </section>
@@ -983,37 +1079,37 @@ body {
 <section class="section">
   <div class="section__label">Media Coverage</div>
   <h2 class="section__heading">Published Material About Timur Rakhmatullin</h2>
-  <p style="color: var(--ink-secondary); margin-bottom: 1rem;">
+  <p style="margin-bottom: 1rem;">
     Interviews and articles by third-party journalists in professional and major media outlets.
   </p>
 
   <div class="pub">
-    <div class="pub__title"><a href="https://3dnews.ru/1114582/timur-rahmatullin-professionalniy-put-bekendrazrabotchika" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Timur Rakhmatullin: The Professional Journey of a Backend Developer</a></div>
+    <div class="pub__title"><a href="https://3dnews.ru/1114582/timur-rahmatullin-professionalniy-put-bekendrazrabotchika" target="_blank" rel="noopener">Timur Rakhmatullin: The Professional Journey of a Backend Developer</a></div>
     <div class="pub__venue">3DNews — independent tech media (est. 1997) · Nov 14, 2024 · Author: Andrey Sozinov</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://www.tadviser.ru/index.php/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8:%D0%A2%D0%B8%D0%BC%D1%83%D1%80_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%BB%D0%BB%D0%B8%D0%BD:_%D0%94%D0%B0%D0%B6%D0%B5_%D0%BE%D0%BF%D1%8B%D1%82%D0%BD%D1%8B%D0%BC_IT-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B0%D0%BC_%D0%BD%D1%83%D0%B6%D0%BD%D0%BE_%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C_%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B8_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B_%D0%BF%D0%BE%D0%B4_%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Timur Rakhmatullin: Even Experienced IT Specialists Need to Practice Working Under Pressure</a></div>
+    <div class="pub__title"><a href="https://www.tadviser.ru/index.php/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8:%D0%A2%D0%B8%D0%BC%D1%83%D1%80_%D0%A0%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%BB%D0%BB%D0%B8%D0%BD:_%D0%94%D0%B0%D0%B6%D0%B5_%D0%BE%D0%BF%D1%8B%D1%82%D0%BD%D1%8B%D0%BC_IT-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B0%D0%BC_%D0%BD%D1%83%D0%B6%D0%BD%D0%BE_%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C_%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B8_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B_%D0%BF%D0%BE%D0%B4_%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" target="_blank" rel="noopener">Timur Rakhmatullin: Even Experienced IT Specialists Need to Practice Working Under Pressure</a></div>
     <div class="pub__venue">TAdviser — #1 corporate IT portal in Russia (Best IT Media, RUSSOFT 2020) · Aug 25, 2024 · Author: Anatoly Sychev</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://www.securitylab.ru/analytics/543165.php" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Timur Rakhmatullin: The Ability to Prioritize Is the Key to Success!</a></div>
+    <div class="pub__title"><a href="https://www.securitylab.ru/analytics/543165.php" target="_blank" rel="noopener">Timur Rakhmatullin: The Ability to Prioritize Is the Key to Success!</a></div>
     <div class="pub__venue">SecurityLab.ru — cybersecurity portal by Positive Technologies (MOEX: POSI) · Oct 30, 2023 · Author: Marina Larikova</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://sm.news/timur-raxmatullin-put-uspeshnogo-programmista-71536/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Timur Rakhmatullin: The Path of a Successful Programmer</a></div>
+    <div class="pub__title"><a href="https://sm.news/timur-raxmatullin-put-uspeshnogo-programmista-71536/" target="_blank" rel="noopener">Timur Rakhmatullin: The Path of a Successful Programmer</a></div>
     <div class="pub__venue">SM News — federal news agency (7.8M monthly traffic) · Apr 10, 2023 · Author: Sergey Redchits</div>
   </div>
   <div class="pub">
-    <div class="pub__title"><a href="https://www.kp.ru/daily/27487/4696657/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Timur Rakhmatullin: In the IT Sphere, the Learning Process Never Ends</a></div>
+    <div class="pub__title"><a href="https://www.kp.ru/daily/27487/4696657/" target="_blank" rel="noopener">Timur Rakhmatullin: In the IT Sphere, the Learning Process Never Ends</a></div>
     <div class="pub__venue">Komsomolskaya Pravda (kp.ru) — Russia's largest multimedia holding, 86.4M monthly views · Dec 22, 2022 · Author: Dmitry Ivanov</div>
   </div>
 
-  <h3 style="margin-top: 2rem; font-size: 1.05rem; color: var(--ink);">Award Coverage</h3>
-  <p style="color: var(--ink-secondary); margin-bottom: 0.75rem;">
+  <h3 class="media-sub">Award Coverage</h3>
+  <p style="margin-bottom: 0.75rem;">
     Articles about award recognition in major Russian media outlets.
   </p>
   <div class="pub">
-    <div class="pub__title"><a href="https://digital-leaders.online/laureatyi/laureates-2023" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Digital Leaders Award 2023 — Developer of the Year (Big Data & Predictive Analytics)</a></div>
+    <div class="pub__title"><a href="https://digital-leaders.online/laureatyi/laureates-2023" target="_blank" rel="noopener">Digital Leaders Award 2023 — Developer of the Year (Big Data & Predictive Analytics)</a></div>
     <div class="pub__venue">Covered by: <a href="https://www.sostav.ru/publication/tsifrorevolyutsiya-nazvany-laureaty-premii-digital-leaders-2023-64941.html" target="_blank" rel="noopener">sostav.ru</a> · <a href="https://www.dp.ru/a/2023/12/12/platforma-avito-stala-laureatom" target="_blank" rel="noopener">dp.ru</a> · <a href="https://www.techinsider.ru/editorial/1624581-cifrorevolyuciya-nazvany-laureaty-premii-digital-leaders-2023/" target="_blank" rel="noopener">techinsider.ru</a> · <a href="https://www.finam.ru/analysis/scsone016D2/" target="_blank" rel="noopener">finam.ru</a> · <a href="https://ria.ru" target="_blank" rel="noopener">ria.ru</a> · <a href="https://lenta.ru" target="_blank" rel="noopener">lenta.ru</a> · <a href="https://radiokp.ru/znamenitosti/nid723095_au8118auauau_cifrorevolyuciya-nazvany-laureaty-premii-digital-leaders-2023" target="_blank" rel="noopener">radiokp.ru</a> and others · 2023</div>
   </div>
   <div class="pub">
