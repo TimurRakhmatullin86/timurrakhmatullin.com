@@ -1,0 +1,147 @@
+# Timur Rakhmatullin
+
+> Senior Software Engineer specializing in distributed systems, real-time data pipelines, and data engineering. Open-source author. Published researcher. Stanford Continuing Studies.
+
+## Identity
+
+- Full Name: Timur Rakhmatullin
+- Also Known As: Тимур Рахматуллин
+- Location: Los Angeles, California, United States
+- Email: timur.rakhmatullin86@gmail.com
+- Website: https://timurrakhmatullin.com
+- GitHub: https://github.com/TimurRakhmatullin86
+- Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+- Dev.to: https://dev.to/tim860
+
+## Current Role
+
+Sr. Software Engineer, Pipelining at Softline Solutions (https://www.softlinesolutions.com), Sep 2026 – Present.
+Agency Services, Data group. Los Angeles, CA.
+
+Building the GCP-based data platform behind a performance marketing agency running paid search, paid social, programmatic, SEO, and e-commerce across 1,500+ client accounts.
+
+Key work:
+- Ingestion pipelines on Google Cloud: Pub/Sub → Cloud Functions → BigQuery, 15+ platform connectors (Google Ads, GA4, Meta, Microsoft Advertising, Amazon Ads), 3+ GB/day
+- High-load backend services in Kotlin and Java (Spring Boot, Ktor) — async processing, backpressure, idempotent writes, multi-tenant workloads
+- Connector framework for third-party marketing APIs: incremental sync, rate-limit management, schema evolution, dead-letter recovery, failure isolation
+- Optimized pipeline execution: cut end-to-end run time by 63%
+- BigQuery warehouse modeling: partitioned/clustered tables, star-schema, materialized views — reduced query time by 77%
+- Data quality: freshness SLAs, anomaly detection, 99.6% reconciliation accuracy
+- Observability: Cloud Monitoring, structured logging, per-connector error budgets
+- Security: least-privilege IAM, secret management, audited dataset access
+
+## Previous Role
+
+Senior Software Engineer at MyTona (https://www.mytona.com), Sep 2019 – Dec 2024 (5 yrs 4 mos).
+Gaming company behind Cooking Diary (22M+ downloads) and Seekers Notes.
+
+Key work:
+- Real-time ingestion for 50M+ daily game events: Java/Kotlin, Apache Kafka, Apache Flink
+- Scalable data lake on AWS S3 with Apache Spark — 99.9% uptime, 30% KPI accuracy improvement
+- Custom Tableau-like data visualization portal and internal tools for QA, Support, HR, Game Testers
+- Agentic AI workflows and RAG systems: LangChain, LangGraph, Langfuse
+- Custom MCP (Model Context Protocol) servers for LLM real-time context from PostgreSQL and Redshift
+- Self-service infrastructure for 100+ engineers — reduced time-to-market by 35%
+- ELT pipelines: Redshift, BigQuery, Snowflake — reduced report generation time by 60%
+- Multi-cloud management (AWS/Azure/GCP) — reduced deployment lead time by 50%, infra costs by 20%
+- Database migration to Redshift and MongoDB — cut analytical query response times by 60%
+- Observability: Prometheus, Grafana, Graylog, Sentry, Jaeger
+
+## Technical Expertise
+
+Languages: Java, Kotlin, Python, Rust, Go, SQL
+Data & Streaming: Apache Kafka, Apache Flink, Apache Airflow, Apache Spark, Debezium CDC, ETL/ELT Pipelines
+Databases: PostgreSQL, MongoDB, Redis, ClickHouse, BigQuery, Redshift, Snowflake
+Infrastructure: OpenTelemetry, Docker, Kubernetes, CI/CD, AWS, GCP, Azure, Terraform
+AI/ML Tooling: LLM Integration, MCP Protocol, LangChain, LangGraph, Prompt Security, AI Observability
+Specializations: Game Analytics, Real-Time Processing, Distributed Systems, Backend Architecture, Data Engineering
+
+## Open-Source Projects
+
+### TraceShrink
+- URL: https://github.com/TimurRakhmatullin86/traceshrink
+- Language: Go
+- Description: Cost-aware OpenTelemetry Collector processor. Keeps expensive traces, drops cheap ones — saving up to 98% storage costs. Includes cost annotation processor that prices LLM spans using embedded pricing data for 2,764 models.
+- Performance: 1.84M spans/sec throughput
+- Tests: 24
+
+### PromptFirewall
+- URL: https://github.com/TimurRakhmatullin86/promptfirewall
+- Language: Rust, Python (PyO3), Node.js (napi-rs)
+- Description: Multi-layer prompt injection detection library. Rule-based scanning — no ML model required. Ships with middleware for FastAPI and Express.
+- Performance: 11.9μs per scan
+- Tests: 149
+- Packages: crates.io, PyPI, npm
+
+### LogCompress
+- URL: https://github.com/TimurRakhmatullin86/logcompress
+- Language: Rust
+- Description: Semantic log compression for incident investigation. Trace-aware expansion pulls all related log lines by trace ID. Parallel tokenization via Rayon.
+- Performance: 100% recall on benchmark (55/55 queries, 5 incident types)
+- Tests: 34
+- Packages: crates.io
+
+### CodeShrink
+- URL: https://github.com/TimurRakhmatullin86/codeshrink
+- Language: Rust, Node.js (napi-rs)
+- Description: Code-aware context compressor for LLMs. Extracts function signatures while discarding implementation details. Helps fit entire repositories into LLM context windows.
+- Performance: 99.9% compression (1.29M LOC → 1.5K in 2.8s)
+- Tests: 16
+- Packages: crates.io, npm
+
+### MCP-Drill
+- URL: https://github.com/TimurRakhmatullin86/mcp-drill
+- Language: Python
+- Description: Fault injection and contract compliance testing for MCP (Model Context Protocol) servers. Generates compliance scorecards.
+- Packages: PyPI
+
+## Open-Source Contributions
+
+20 merged pull requests to major projects:
+- Apache Airflow (workflow orchestration): 5 merged PRs
+- Debezium (change data capture): 8 merged PRs
+- Haystack (LLM framework): 2 merged PRs
+- LangChain4j (Java LLM framework): 2 merged PRs
+- Quarkus (cloud-native Java): 1 merged PR
+- Additional 7 PRs currently under review
+
+## Research & Publications
+
+31+ total citations across 10+ peer-reviewed papers.
+Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+
+Selected papers:
+- Apache Kafka vs RabbitMQ: Comparative Analysis for Distributed Systems (2022) — 12 citations
+- Kotlin as the Future of Mobile Application Development (2022) — 6 citations
+- MongoDB Sharding: Performance and Scalability Analysis (2024) — 5 citations
+- Optimization of Real-Time Game Metrics Processing Using Apache Flink and Apache Kafka (2024) — 2 citations
+- Cloud Resource ROI Optimization (2026) — 2 citations
+- Redis Performance Analysis for Real-Time Systems (2024) — 2 citations
+- Economic Efficiency of Hybrid Stream Processing (2025)
+- Kotlin Coroutines for Concurrent Programming (2023)
+- ETL Pipeline Optimization with Apache Airflow (2024)
+- MongoDB Fundamentals for Modern Applications (2025)
+
+## Education
+
+- Stanford University — Stanford Continuing Studies, "Large Language Models for Business with Python", Certificate of Completion, Winter 2026
+- South Ural State University — Master's Degree, Computer Science, 2008
+
+## Awards & Recognition
+
+- Digital Leaders Award 2023 — Jury score 9–10/10
+- Golden App Award — Judge (2022, 2023)
+- Peer Reviewer — Current Research Journal (2022–2026, 5 papers)
+- IAHD Hackathon — Judge (2024)
+
+## Speaking
+
+- AI Weekend, Los Angeles (2024) — Speaker on applied AI in game analytics
+- Government Roundtable, Russia (2023) — Invited participant on IT industry development
+
+## Technical Articles (Dev.to)
+
+- TraceShrink: Cost-Aware OTel Trace Sampling (2026)
+- PromptFirewall: Rule-Based Prompt Injection Detection in Rust (2026)
+- LogCompress: Semantic Log Compression for Incident Response (2026)
+- CodeShrink: LLM-Optimized Code Compression (2026)

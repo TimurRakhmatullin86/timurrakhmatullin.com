@@ -1,0 +1,1018 @@
+<title>Timur Rakhmatullin</title>
+<meta name="description" content="Senior Software Engineer — distributed systems, data engineering, and real-time analytics. Open-source author. Published researcher with 31+ citations.">
+<meta name="author" content="Timur Rakhmatullin">
+<meta name="keywords" content="Timur Rakhmatullin, software engineer, distributed systems, data engineering, OpenTelemetry, Apache Kafka, Apache Flink, game analytics, open source, Softline Solutions, data pipelines">
+<meta property="og:title" content="Timur Rakhmatullin — Senior Software Engineer">
+<meta property="og:description" content="Distributed systems, data engineering, and real-time analytics. Open-source author. Published researcher.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://timurrakhmatullin.dev">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://timurrakhmatullin.dev">
+
+<!-- AI discoverability: JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Timur Rakhmatullin",
+  "alternateName": "Тимур Рахматуллин",
+  "jobTitle": "Senior Software Engineer, Pipelining",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Softline Solutions",
+    "url": "https://www.softlinesolutions.com",
+    "description": "Performance marketing agency running paid search, social, programmatic, SEO, and e-commerce across 1,500+ client accounts"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "South Ural State University",
+      "department": "Computer Science"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Stanford University",
+      "department": "Stanford Continuing Studies"
+    }
+  ],
+  "knowsAbout": [
+    "Distributed Systems", "Data Engineering", "Real-Time Analytics",
+    "Apache Kafka", "Apache Flink", "OpenTelemetry",
+    "Java", "Kotlin", "Python", "Rust", "Go",
+    "ETL Pipelines", "Game Analytics", "Backend Architecture",
+    "AI Security", "LLM Observability", "MCP Protocol"
+  ],
+  "url": "https://timurrakhmatullin.dev",
+  "sameAs": [
+    "https://github.com/TimurRakhmatullin86",
+    "https://scholar.google.com/citations?user=d0nzx0oAAAAJ",
+    "https://dev.to/tim860"
+  ],
+  "nationality": "Russian",
+  "award": [
+    "Digital Leaders Award — Jury Score 9-10/10",
+    "Golden App Award Judge (2022, 2023)"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Master's Degree",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "South Ural State University"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Certificate of Completion",
+      "name": "Large Language Models for Business with Python",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Stanford University"
+      },
+      "dateReceived": "2026"
+    }
+  ],
+  "description": "Software engineer specializing in distributed systems, real-time data pipelines, and game analytics at scale. Published researcher with 31+ citations across 10+ papers on Apache Kafka, MongoDB, Kotlin, and stream processing. Author of open-source tools for observability cost optimization, AI security, and log compression. Contributor to Apache Airflow, Debezium, Haystack, LangChain4j, and Quarkus with 20+ merged pull requests. Stanford Continuing Studies — LLM for Business with Python."
+}
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+:root {
+  --ink: #1a1d23;
+  --ink-secondary: #4a4e57;
+  --paper: #f7f6f3;
+  --paper-deep: #efeee9;
+  --accent: #2d5f8a;
+  --accent-light: #e8f0f7;
+  --accent-wash: #d4e4f0;
+  --muted: #6b7280;
+  --border: #d5d1cb;
+  --border-light: #e8e5df;
+  --code-bg: #f0ede8;
+  --tag-bg: #e8e5df;
+  --tag-text: #4a4e57;
+  --success: #2a7d4f;
+  --serif: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e4e2dd;
+    --ink-secondary: #a8a5a0;
+    --paper: #181a1e;
+    --paper-deep: #1e2026;
+    --accent: #6da3d4;
+    --accent-light: #1e2a38;
+    --accent-wash: #243040;
+    --muted: #8a8d94;
+    --border: #333640;
+    --border-light: #282b33;
+    --code-bg: #1e2026;
+    --tag-bg: #282b33;
+    --tag-text: #a8a5a0;
+    --success: #4aad6f;
+  }
+}
+:root[data-theme="dark"] {
+  --ink: #e4e2dd;
+  --ink-secondary: #a8a5a0;
+  --paper: #181a1e;
+  --paper-deep: #1e2026;
+  --accent: #6da3d4;
+  --accent-light: #1e2a38;
+  --accent-wash: #243040;
+  --muted: #8a8d94;
+  --border: #333640;
+  --border-light: #282b33;
+  --code-bg: #1e2026;
+  --tag-bg: #282b33;
+  --tag-text: #a8a5a0;
+  --success: #4aad6f;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── HEADER / HERO ── */
+.header {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.header__eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.header__name {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+  text-wrap: balance;
+}
+
+.header__title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--ink-secondary);
+  margin: 0 0 1.25rem;
+}
+
+.header__summary {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.header__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+}
+
+.header__links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.15s;
+}
+.header__links a:hover { text-decoration: underline; }
+.header__links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.header__links svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* ── KEY METRICS ── */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.metric {
+  background: var(--paper);
+  padding: 1rem 1.25rem;
+}
+
+.metric__value {
+  font-family: var(--sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.metric__label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+/* ── SECTIONS ── */
+.section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+.section:last-child { border-bottom: none; }
+
+.section__label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.section__heading {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+/* ── PROJECT ENTRIES ── */
+.project {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-light);
+}
+.project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.project__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.project__name {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project__name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.project__name a:hover { color: var(--accent); }
+.project__name a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.project__lang {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.project__desc {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.project__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.5rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 3px;
+}
+
+.tag--accent {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* ── CONTRIBUTIONS TABLE ── */
+.contrib-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.contrib-table th {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contrib-table td {
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: top;
+}
+
+.contrib-table tr:last-child td { border-bottom: none; }
+
+.contrib-table a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.contrib-table a:hover { text-decoration: underline; }
+.contrib-table a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.contrib-count {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.overflow-x { overflow-x: auto; }
+
+/* ── PUBLICATION LIST ── */
+.pub {
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.pub__title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.pub__venue {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pub__cite {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--success);
+  margin-left: 0.5rem;
+}
+
+/* ── AWARDS ── */
+.award {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.award__year {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  flex-shrink: 0;
+  min-width: 3.5rem;
+}
+
+.award__text {
+  font-size: 0.95rem;
+}
+
+.award__note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── EXPERTISE GRID ── */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.expertise__category {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.expertise__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expertise__items li {
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+  color: var(--ink-secondary);
+}
+
+/* ── FOOTER ── */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.footer a:hover { text-decoration: underline; }
+.footer a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  body { padding: 2rem 1rem 3rem; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .header__links { flex-direction: column; gap: 0.5rem; }
+  .project__header { flex-direction: column; gap: 0.25rem; }
+  .award { flex-direction: column; gap: 0.15rem; }
+}
+
+@media print {
+  body { max-width: none; font-size: 12px; }
+  .header__links a { color: var(--ink); }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: var(--muted); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+</style>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header__eyebrow">Software Engineer · Researcher · Open-Source Author</div>
+  <h1 class="header__name">Timur Rakhmatullin</h1>
+  <p class="header__title">Senior Software Engineer — Distributed Systems & Data Pipelines</p>
+  <p class="header__summary">
+    I build real-time data pipelines and backend systems that serve millions of users.
+    Professional experience across Java, Kotlin, Python, Rust, and Go.
+    Currently building the GCP data platform at Softline Solutions (1,500+ client accounts, 15+ API connectors).
+    Previously engineered real-time ingestion for 50M+ daily game events at MyTona (22M+ downloads).
+    Stanford Continuing Studies — LLM for Business. Published researcher with 31+ citations.
+    Active open-source contributor with 20+ merged PRs to Apache Airflow, Debezium, and other major projects.
+  </p>
+  <nav class="header__links">
+    <a href="https://github.com/TimurRakhmatullin86" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+    <a href="https://scholar.google.com/citations?user=d0nzx0oAAAAJ" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L0 6l3 2.2V14l5 2 5-2V8.2L16 6 8 0zm4 13.1l-4 1.6-4-1.6V9l4 2.9L12 9v4.1zM8 10.6L3.4 7.3 8 2.4l4.6 4.9L8 10.6z"/></svg>
+      Google Scholar
+    </a>
+    <a href="https://dev.to/tim860" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.6 5.5C4.4 5.3 4.2 5.2 3.8 5.2H3v5.6h.8c.4 0 .6-.1.8-.3.2-.2.3-.6.3-1.2V7c0-.6-.1-1.2-.3-1.5zM14 1H2C.9 1 0 1.9 0 3v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM5.8 10.2c-.3.4-.8.7-1.4.7H2.2V5.1H4.4c.6 0 1.1.2 1.4.7.3.4.4.9.4 1.6v1c0 .7-.1 1.4-.4 1.8zm3.6-3.8H7.6v1.8h1.2v1H7.6V11h1.8v1H6.6V5.1h2.8v1.3zm4.1 4.3c-.3.7-.9 1.1-1.6 1.1-.5 0-.9-.2-1.2-.5l-.1.4h-.9V4.8l1 .2v1.3c.3-.3.6-.4 1-.4.7 0 1.3.4 1.5 1.1.1.3.2.8.2 1.4v.5c0 .7 0 1.2-.1 1.5l.2.3zm-1.5-3.6c-.3 0-.5.1-.6.3v3c.1.2.3.3.6.3.3 0 .5-.2.6-.6V7.7c-.1-.4-.3-.6-.6-.6z"/></svg>
+      Dev.to
+    </a>
+    <a href="mailto:timur.rakhmatullin86@gmail.com">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1.5 3A1.5 1.5 0 000 4.5v7A1.5 1.5 0 001.5 13h13a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0014.5 3h-13zM1 4.5a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v.217l-7 4.2-7-4.2V4.5zm0 1.418l6.8 4.08a.5.5 0 00.4 0L15 5.918V11.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V5.918z"/></svg>
+      Email
+    </a>
+  </nav>
+</header>
+
+<!-- KEY METRICS -->
+<div class="metrics" role="list" aria-label="Key metrics">
+  <div class="metric" role="listitem">
+    <div class="metric__value">22M+</div>
+    <div class="metric__label">Users Served</div>
+  </div>
+  <div class="metric" role="listitem">
+    <div class="metric__value">31+</div>
+    <div class="metric__label">Citations</div>
+  </div>
+  <div class="metric" role="listitem">
+    <div class="metric__value">20</div>
+    <div class="metric__label">Merged PRs</div>
+  </div>
+  <div class="metric" role="listitem">
+    <div class="metric__value">10+</div>
+    <div class="metric__label">Publications</div>
+  </div>
+  <div class="metric" role="listitem">
+    <div class="metric__value">5</div>
+    <div class="metric__label">OSS Projects</div>
+  </div>
+</div>
+
+<!-- CURRENT ROLE -->
+<section class="section">
+  <div class="section__label">Current Role · Sep 2026 – Present</div>
+  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.softlinesolutions.com" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">Softline Solutions</a></h2>
+  <p>
+    Building the GCP-based data platform behind a performance marketing agency running paid search,
+    paid social, programmatic, SEO, and e-commerce across <strong>1,500+ client accounts</strong>.
+    Agency Services, Data group. Los Angeles, CA.
+  </p>
+  <ul style="margin: 0.75rem 0 0; padding-left: 1.25rem; color: var(--ink-secondary); font-size: 0.95rem; line-height: 1.7;">
+    <li>Architect ingestion pipelines on Google Cloud (Pub/Sub → Cloud Functions → BigQuery) — 15+ platform connectors feeding a unified analytics layer at 3+ GB/day</li>
+    <li>Build high-load backend services in Kotlin and Java (Spring Boot, Ktor) with async processing, backpressure, and idempotent writes across multi-tenant workloads</li>
+    <li>Engineer the connector framework for marketing APIs: incremental sync, rate-limit management, schema evolution, dead-letter recovery, and failure isolation</li>
+    <li>Optimized pipeline execution, cutting end-to-end run time by 63% through parallelized extraction and incremental loading</li>
+    <li>Model BigQuery warehouse — partitioned/clustered tables, star-schema, materialized views — reducing query time by 77%</li>
+    <li>Data quality controls: freshness SLAs, anomaly detection, automated spend reconciliation at 99.6% accuracy</li>
+  </ul>
+</section>
+
+<!-- PREVIOUS EXPERIENCE -->
+<section class="section">
+  <div class="section__label">Previous Experience · Sep 2019 – Dec 2024 · 5 yrs 4 mos</div>
+  <h2 class="section__heading">Senior Software Engineer — <a href="https://www.mytona.com" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">MyTona</a></h2>
+  <p>
+    Gaming company behind <strong>Cooking Diary</strong> (22M+ downloads) and <strong>Seekers Notes</strong>.
+    Backend architecture, real-time data pipelines, and AI/ML infrastructure.
+  </p>
+  <ul style="margin: 0.75rem 0 0; padding-left: 1.25rem; color: var(--ink-secondary); font-size: 0.95rem; line-height: 1.7;">
+    <li>Architected real-time ingestion for 50M+ daily game events using Java/Kotlin, Apache Kafka and Flink; built a scalable data lake on AWS S3 with Apache Spark — 99.9% uptime, 30% improvement in KPI accuracy</li>
+    <li>Designed a custom data visualization portal (Tableau-like) and internal tools for QA, Support, HR, and Game Testers — unified telemetry across departments</li>
+    <li>Architected agentic AI workflows and RAG systems using LangChain, LangGraph, Langfuse; built custom MCP servers providing LLMs with real-time context from PostgreSQL and Redshift</li>
+    <li>Enabled 100+ engineers to provision environments independently with self-service workflows, reducing time-to-market by 35%</li>
+    <li>Designed ELT pipelines integrating Redshift, BigQuery, and Snowflake — reduced report generation time by 60%</li>
+    <li>Managed multi-cloud infrastructure (AWS/Azure/GCP), reducing deployment lead time by 50% and infra costs by 20%</li>
+    <li>Migrated legacy databases to Redshift and MongoDB — cut analytical query response times by 60%</li>
+    <li>Deployed observability stack: Prometheus, Grafana, Graylog, Sentry, Jaeger</li>
+  </ul>
+</section>
+
+<!-- OPEN-SOURCE PROJECTS -->
+<section class="section">
+  <div class="section__label">Open-Source Projects</div>
+  <h2 class="section__heading">Tools for Observability, AI Security & Developer Productivity</h2>
+
+  <div class="project">
+    <div class="project__header">
+      <h3 class="project__name"><a href="https://github.com/TimurRakhmatullin86/traceshrink" target="_blank" rel="noopener">TraceShrink</a></h3>
+      <span class="project__lang">Go</span>
+    </div>
+    <p class="project__desc">
+      Cost-aware OpenTelemetry Collector processor. Keeps expensive traces, drops cheap ones —
+      saving up to 98% storage costs. Includes a cost annotation processor that prices LLM spans
+      using embedded pricing data for 2,764 models.
+    </p>
+    <div class="project__stats">
+      <span class="tag tag--accent">1.84M spans/sec</span>
+      <span class="tag">24 tests</span>
+      <span class="tag">OTel Collector</span>
+      <span class="tag">LLM Cost</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project__header">
+      <h3 class="project__name"><a href="https://github.com/TimurRakhmatullin86/promptfirewall" target="_blank" rel="noopener">PromptFirewall</a></h3>
+      <span class="project__lang">Rust · Python · Node.js</span>
+    </div>
+    <p class="project__desc">
+      Multi-layer prompt injection detection library. Rule-based scanning at 11.9μs per input —
+      no ML model required. Ships as a Rust crate, Python package (PyO3), and npm package (napi-rs)
+      with middleware for FastAPI and Express.
+    </p>
+    <div class="project__stats">
+      <span class="tag tag--accent">11.9μs / scan</span>
+      <span class="tag">149 tests</span>
+      <span class="tag">crates.io</span>
+      <span class="tag">PyPI</span>
+      <span class="tag">npm</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project__header">
+      <h3 class="project__name"><a href="https://github.com/TimurRakhmatullin86/logcompress" target="_blank" rel="noopener">LogCompress</a></h3>
+      <span class="project__lang">Rust</span>
+    </div>
+    <p class="project__desc">
+      Semantic log compression for incident investigation. Achieves 100% recall on benchmark
+      (55/55 queries, 5 incident types) with trace-aware expansion that pulls all related log lines
+      by trace ID. Parallel tokenization via Rayon.
+    </p>
+    <div class="project__stats">
+      <span class="tag tag--accent">100% recall</span>
+      <span class="tag">34 tests</span>
+      <span class="tag">crates.io</span>
+      <span class="tag">SRE / On-call</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project__header">
+      <h3 class="project__name"><a href="https://github.com/TimurRakhmatullin86/codeshrink" target="_blank" rel="noopener">CodeShrink</a></h3>
+      <span class="project__lang">Rust · Node.js</span>
+    </div>
+    <p class="project__desc">
+      Code-aware context compressor for LLMs. Extracts function signatures while discarding
+      implementation details — 99.9% compression on large codebases (1.29M LOC → 1.5K in 2.8s).
+      Helps fit entire repositories into LLM context windows.
+    </p>
+    <div class="project__stats">
+      <span class="tag tag--accent">99.9% compression</span>
+      <span class="tag">16 tests</span>
+      <span class="tag">crates.io</span>
+      <span class="tag">npm</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project__header">
+      <h3 class="project__name"><a href="https://github.com/TimurRakhmatullin86/mcp-drill" target="_blank" rel="noopener">MCP-Drill</a></h3>
+      <span class="project__lang">Python</span>
+    </div>
+    <p class="project__desc">
+      Fault injection and contract compliance testing for MCP (Model Context Protocol) servers.
+      Verifies that AI tool servers handle edge cases, malformed inputs, and resource limits correctly.
+      Generates compliance scorecards.
+    </p>
+    <div class="project__stats">
+      <span class="tag tag--accent">Contract Testing</span>
+      <span class="tag">PyPI</span>
+      <span class="tag">GitHub Action</span>
+      <span class="tag">MCP Protocol</span>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN-SOURCE CONTRIBUTIONS -->
+<section class="section">
+  <div class="section__label">Open-Source Contributions</div>
+  <h2 class="section__heading">20 Merged Pull Requests to Major Projects</h2>
+
+  <div class="overflow-x">
+    <table class="contrib-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Area</th>
+          <th style="text-align:right">Merged PRs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/apache/airflow" target="_blank" rel="noopener">Apache Airflow</a></td>
+          <td>Workflow orchestration</td>
+          <td style="text-align:right" class="contrib-count">5</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/debezium/debezium" target="_blank" rel="noopener">Debezium</a></td>
+          <td>Change data capture</td>
+          <td style="text-align:right" class="contrib-count">8</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/deepset-ai/haystack" target="_blank" rel="noopener">Haystack</a></td>
+          <td>LLM framework</td>
+          <td style="text-align:right" class="contrib-count">2</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/langchain4j/langchain4j" target="_blank" rel="noopener">LangChain4j</a></td>
+          <td>Java LLM framework</td>
+          <td style="text-align:right" class="contrib-count">2</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/quarkusio/quarkus" target="_blank" rel="noopener">Quarkus</a></td>
+          <td>Cloud-native Java</td>
+          <td style="text-align:right" class="contrib-count">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem;">
+    Additional 7 pull requests currently under review across Debezium, vLLM, and Quarkus.
+  </p>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section">
+  <div class="section__label">Research & Publications</div>
+  <h2 class="section__heading">Peer-Reviewed Papers — 31+ Citations</h2>
+
+  <div class="pub">
+    <div class="pub__title">Apache Kafka vs RabbitMQ: Comparative Analysis for Distributed Systems<span class="pub__cite">12 citations</span></div>
+    <div class="pub__venue">2022</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Kotlin as the Future of Mobile Application Development<span class="pub__cite">6 citations</span></div>
+    <div class="pub__venue">2022</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">MongoDB Sharding: Performance and Scalability Analysis<span class="pub__cite">5 citations</span></div>
+    <div class="pub__venue">2024</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Optimization of Real-Time Game Metrics Processing Using Apache Flink and Apache Kafka<span class="pub__cite">2 citations</span></div>
+    <div class="pub__venue">2024 · ResearchGate</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Cloud Resource ROI Optimization<span class="pub__cite">2 citations</span></div>
+    <div class="pub__venue">2026</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Redis Performance Analysis for Real-Time Systems<span class="pub__cite">2 citations</span></div>
+    <div class="pub__venue">2024</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Economic Efficiency of Hybrid Stream Processing</div>
+    <div class="pub__venue">2025</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">Kotlin Coroutines for Concurrent Programming</div>
+    <div class="pub__venue">2023</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">ETL Pipeline Optimization with Apache Airflow</div>
+    <div class="pub__venue">2024</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub__title">MongoDB Fundamentals for Modern Applications</div>
+    <div class="pub__venue">2025</div>
+  </div>
+
+  <p style="font-size: 0.85rem; margin-top: 1rem;">
+    <a href="https://scholar.google.com/citations?user=d0nzx0oAAAAJ" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">View full publication list on Google Scholar →</a>
+  </p>
+</section>
+
+<!-- AWARDS & RECOGNITION -->
+<section class="section">
+  <div class="section__label">Awards & Recognition</div>
+  <h2 class="section__heading">Industry Awards & Judging Experience</h2>
+
+  <div style="margin-bottom: 1.5rem;">
+    <div class="award">
+      <span class="award__year">2023</span>
+      <div>
+        <div class="award__text"><strong>Digital Leaders Award</strong></div>
+        <div class="award__note">Jury score: 9–10 out of 10. "The development can be applied to any area of the game-industry, which makes it an innovative solution significant for the industry as a whole."</div>
+      </div>
+    </div>
+    <div class="award">
+      <span class="award__year">2022–23</span>
+      <div>
+        <div class="award__text"><strong>Golden App Award — Judge</strong></div>
+        <div class="award__note">Selected as jury member for Russia's mobile application award, evaluating technical innovation and UX design.</div>
+      </div>
+    </div>
+    <div class="award">
+      <span class="award__year">2022–26</span>
+      <div>
+        <div class="award__text"><strong>Peer Reviewer — Current Research Journal</strong></div>
+        <div class="award__note">Reviewed 5 papers on software engineering topics.</div>
+      </div>
+    </div>
+    <div class="award">
+      <span class="award__year">2024</span>
+      <div>
+        <div class="award__text"><strong>IAHD Hackathon — Judge</strong></div>
+        <div class="award__note">Evaluated projects at the International Association for Human Development hackathon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKING -->
+<section class="section">
+  <div class="section__label">Speaking</div>
+  <h2 class="section__heading">Conference Talks & Industry Events</h2>
+
+  <div class="award">
+    <span class="award__year">2024</span>
+    <div>
+      <div class="award__text"><strong>AI Weekend, Los Angeles</strong></div>
+      <div class="award__note">Speaker on applied AI in game analytics</div>
+    </div>
+  </div>
+  <div class="award">
+    <span class="award__year">2023</span>
+    <div>
+      <div class="award__text"><strong>Government Roundtable, Russia</strong></div>
+      <div class="award__note">Invited participant on IT industry development policy</div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL EXPERTISE -->
+<section class="section">
+  <div class="section__label">Technical Expertise</div>
+  <h2 class="section__heading">Languages, Frameworks & Infrastructure</h2>
+
+  <div class="expertise-grid">
+    <div>
+      <div class="expertise__category">Languages</div>
+      <ul class="expertise__items">
+        <li>Java · Kotlin</li>
+        <li>Python</li>
+        <li>Rust</li>
+        <li>Go</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+    <div>
+      <div class="expertise__category">Data & Streaming</div>
+      <ul class="expertise__items">
+        <li>Apache Kafka</li>
+        <li>Apache Flink</li>
+        <li>Apache Airflow</li>
+        <li>Debezium CDC</li>
+        <li>ETL Pipelines</li>
+      </ul>
+    </div>
+    <div>
+      <div class="expertise__category">Databases</div>
+      <ul class="expertise__items">
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Redis</li>
+        <li>ClickHouse</li>
+      </ul>
+    </div>
+    <div>
+      <div class="expertise__category">Infrastructure</div>
+      <ul class="expertise__items">
+        <li>OpenTelemetry</li>
+        <li>Docker · Kubernetes</li>
+        <li>CI/CD</li>
+        <li>Cloud (AWS/GCP)</li>
+      </ul>
+    </div>
+    <div>
+      <div class="expertise__category">AI/ML Tooling</div>
+      <ul class="expertise__items">
+        <li>LLM Integration</li>
+        <li>MCP Protocol</li>
+        <li>Prompt Security</li>
+        <li>AI Observability</li>
+      </ul>
+    </div>
+    <div>
+      <div class="expertise__category">Specializations</div>
+      <ul class="expertise__items">
+        <li>Game Analytics</li>
+        <li>Real-Time Processing</li>
+        <li>Distributed Systems</li>
+        <li>Backend Architecture</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <div class="section__label">Education</div>
+  <div class="award">
+    <span class="award__year">2026</span>
+    <div>
+      <div class="award__text"><strong>Large Language Models for Business with Python</strong></div>
+      <div class="award__note">Stanford Continuing Studies, Stanford University — Certificate of Completion (Winter 2026)</div>
+    </div>
+  </div>
+  <div class="award">
+    <span class="award__year">2008</span>
+    <div>
+      <div class="award__text"><strong>Master's Degree, Computer Science</strong></div>
+      <div class="award__note">South Ural State University, Chelyabinsk, Russia</div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES (dev.to) -->
+<section class="section">
+  <div class="section__label">Technical Articles</div>
+  <h2 class="section__heading">Published on Dev.to</h2>
+
+  <div class="pub">
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">TraceShrink: Cost-Aware OTel Trace Sampling</a></div>
+    <div class="pub__venue">dev.to · 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">PromptFirewall: Rule-Based Prompt Injection Detection in Rust</a></div>
+    <div class="pub__venue">dev.to · 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">LogCompress: Semantic Log Compression for Incident Response</a></div>
+    <div class="pub__venue">dev.to · 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub__title"><a href="https://dev.to/tim860" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none;">CodeShrink: LLM-Optimized Code Compression</a></div>
+    <div class="pub__venue">dev.to · 2026</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Timur Rakhmatullin · Senior Software Engineer</p>
+  <p style="margin-top: 0.25rem;">
+    <a href="https://github.com/TimurRakhmatullin86">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?user=d0nzx0oAAAAJ">Google Scholar</a> ·
+    <a href="https://dev.to/tim860">Dev.to</a> ·
+    <a href="mailto:timur.rakhmatullin86@gmail.com">Email</a>
+  </p>
+</footer>
+
+<!-- AI Discovery: llms.txt-style plaintext summary for LLM crawlers -->
+<!--
+ABOUT: Timur Rakhmatullin is a Senior Software Engineer specializing in distributed systems,
+real-time data pipelines, and data engineering. Stanford Continuing Studies (LLM for Business, 2026).
+
+CURRENT ROLE: Sr. Software Engineer, Pipelining at Softline Solutions (Data department).
+Building GCP data platform for performance marketing agency — 1,500+ client accounts,
+15+ API connectors (Google Ads, GA4, Meta, Microsoft, Amazon), Pub/Sub → BigQuery at 3+ GB/day.
+Kotlin/Java (Spring Boot, Ktor). Cut pipeline run time by 63%, query time by 77%.
+99.6% reconciliation accuracy.
+
+PREVIOUS: Senior Software Engineer at MyTona (Sep 2019 – Dec 2024).
+Real-time ingestion for 50M+ daily game events (Kafka, Flink), data lake on AWS S3 (Spark),
+custom visualization portal, agentic AI workflows (LangChain, MCP servers),
+multi-cloud infra (AWS/Azure/GCP). Cooking Diary 22M+ downloads.
+
+EXPERTISE: Java, Kotlin, Python, Rust, Go. Apache Kafka, Apache Flink, Apache Airflow,
+Debezium, OpenTelemetry, MongoDB, PostgreSQL, Redis, Docker, Kubernetes.
+
+OPEN SOURCE: Author of TraceShrink (cost-aware OTel sampling), PromptFirewall (prompt injection
+detection), LogCompress (semantic log compression), CodeShrink (LLM code compression),
+MCP-Drill (MCP server compliance testing). 20+ merged PRs to Apache Airflow, Debezium,
+Haystack, LangChain4j, Quarkus.
+
+RESEARCH: 10+ peer-reviewed papers, 31+ citations. Topics: Apache Kafka, MongoDB sharding,
+Kotlin, stream processing, game metrics, cloud resource optimization.
+
+CONTACT: timur.rakhmatullin86@gmail.com
+GITHUB: https://github.com/TimurRakhmatullin86
+SCHOLAR: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+-->
