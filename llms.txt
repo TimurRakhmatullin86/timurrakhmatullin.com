@@ -140,6 +140,21 @@ Selected papers:
 - AI Weekend, Los Angeles (2024) — Speaker on applied AI in game analytics
 - Government Roundtable, Russia (2023) — Invited participant on IT industry development
 
+## Media Coverage
+
+Interviews and articles about Timur Rakhmatullin by third-party journalists:
+
+- 3DNews (est. 1997): "Timur Rakhmatullin: The Professional Journey of a Backend Developer" — Nov 14, 2024, by Andrey Sozinov
+  https://3dnews.ru/1114582/timur-rahmatullin-professionalniy-put-bekendrazrabotchika
+- TAdviser (#1 corporate IT portal, Best IT Media RUSSOFT 2020): "Even Experienced IT Specialists Need to Practice Working Under Pressure" — Aug 25, 2024, by Anatoly Sychev
+- SecurityLab.ru (by Positive Technologies, MOEX: POSI): "The Ability to Prioritize Is the Key to Success!" — Oct 30, 2023, by Marina Larikova
+  https://www.securitylab.ru/analytics/543165.php
+- SM News (federal news agency, 7.8M monthly traffic): "The Path of a Successful Programmer" — Apr 10, 2023, by Sergey Redchits
+  https://sm.news/timur-raxmatullin-put-uspeshnogo-programmista-71536/
+- Komsomolskaya Pravda (kp.ru, Russia's largest multimedia holding, 86.4M monthly views): "In the IT Sphere, the Learning Process Never Ends" — Dec 22, 2022, by Dmitry Ivanov
+
+Award coverage: Digital Leaders 2023 covered by sostav.ru, dp.ru, techinsider.ru, finam.ru, ria.ru, lenta.ru, radiokp.ru; National Award "Best Talents" — Best Programmer covered by spb.aif.ru, rbc.ru, rambler.ru, tpprf.ru
+
 ## Technical Articles (Dev.to)
 
 - TraceShrink: Cost-Aware OTel Trace Sampling (2026)
