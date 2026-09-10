@@ -128,12 +128,30 @@ Selected papers:
 - Stanford University — Stanford Continuing Studies, "Large Language Models for Business with Python", Certificate of Completion, Winter 2026
 - South Ural State University — Master's Degree, Computer Science, 2008
 
-## Awards & Recognition
+## Awards
 
-- Digital Leaders Award 2023 — Jury score 9–10/10
-- Golden App Award — Judge (2022, 2023)
+- Digital Leaders Award 2023 — Developer of the Year (Big Data & Predictive Analytics), Jury score 9–10/10
+- National Award "Best Talents" — Best Programmer (All-Russian)
+- Turing Day Hackathon — Winner ($1,000 prize), international competition by Hackathon Raptors
+
+## Judging
+
+- AITEX Summit Fall 2025 — Judge (international AI hackathon, 20 judges from 15 countries)
+- IAHD DEI Web Accessibility Hackathon 2023 — Judge
+- Golden App Award — Judge (2022, 2023), Russia's key mobile app competition
+- Runet Prize 2022 — Expert Council member (1,135 entries)
+- KROKIT Startup Accelerator — Judge (EU-funded, international)
+- Borisov Technopark — Expert Council member (selected startups for residency)
 - Peer Reviewer — Current Research Journal (2022–2026, 5 papers)
-- IAHD Hackathon — Judge (2024)
+
+## Professional Memberships
+
+- AITEX — Association of Information Technology Experts (2025, Associate Member)
+- Hackathon Raptors — Fellow (2024, peer-reviewed by 5+ existing fellows; members from Meta, Amazon, NVIDIA, Salesforce)
+- IAHD — International Association of Honored Developers (2023, multi-level selection; members from Google, UniCredit)
+- International Association of IT Professionals (2023)
+- RAEC — Russian Association of Electronic Communications, AI cluster (members: Mail.ru Group, Google, Rambler)
+- International Association of Entrepreneurs and Executives (2023)
 
 ## Speaking
 
@@ -153,7 +171,7 @@ Interviews and articles about Timur Rakhmatullin by third-party journalists:
   https://sm.news/timur-raxmatullin-put-uspeshnogo-programmista-71536/
 - Komsomolskaya Pravda (kp.ru, Russia's largest multimedia holding, 86.4M monthly views): "In the IT Sphere, the Learning Process Never Ends" — Dec 22, 2022, by Dmitry Ivanov
 
-Award coverage: Digital Leaders 2023 covered by sostav.ru, dp.ru, techinsider.ru, finam.ru, ria.ru, lenta.ru, radiokp.ru; National Award "Best Talents" — Best Programmer covered by spb.aif.ru, rbc.ru, rambler.ru, tpprf.ru
+Award coverage: Digital Leaders 2023 covered by sostav.ru, dp.ru, techinsider.ru, finam.ru, ria.ru, lenta.ru, radiokp.ru; National Award "Best Talents" — Best Programmer covered by spb.aif.ru, rbc.ru, rambler.ru, tpprf.ru; Turing Day Hackathon covered by astanahub.com, raptors.dev, startupcentraleurasia.com, grantlar.uz; AITEX Summit 2025 covered by khaleejtimes.com, techbullion.com, aitex.tech
 
 ## Technical Articles (Dev.to)
 
