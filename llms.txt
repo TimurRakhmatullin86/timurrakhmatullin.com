@@ -11,6 +11,7 @@
 - Website: https://timurrakhmatullin.com
 - GitHub: https://github.com/TimurRakhmatullin86
 - Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+- ORCID: https://orcid.org/0009-0001-0642-2517
 - Dev.to: https://dev.to/tim860
 
 ## Current Role
