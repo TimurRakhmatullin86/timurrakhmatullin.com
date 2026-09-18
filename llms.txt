@@ -2,6 +2,8 @@
 
 > Senior Software Engineer specializing in distributed systems, real-time data pipelines, and data engineering. Open-source author. Published researcher. Stanford Continuing Studies.
 
+> Русская версия / Russian version: https://timurrakhmatullin.com/llms-ru.txt
+
 ## Identity
 
 - Full Name: Timur Rakhmatullin
