@@ -12,6 +12,7 @@
 - GitHub: https://github.com/TimurRakhmatullin86
 - Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
 - ORCID: https://orcid.org/0009-0001-0642-2517
+- LinkedIn: https://www.linkedin.com/in/tim860
 - Dev.to: https://dev.to/tim860
 
 ## Текущая позиция
@@ -145,6 +146,21 @@ Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
 
 - AI Weekend, Лос-Анджелес (2024) — Доклад о применении AI в игровой аналитике
 - Правительственный круглый стол, Россия (2023) — Приглашённый участник по вопросам развития IT-отрасли
+
+## Технические статьи
+
+Dev.to:
+- TraceShrink: Cost-Aware OTel Trace Sampling (2026)
+- PromptFirewall: Rule-Based Prompt Injection Detection in Rust (2026)
+- LogCompress: Semantic Log Compression for Incident Response (2026)
+- CodeShrink: LLM-Optimized Code Compression (2026)
+
+Habr.com (крупнейшая IT-площадка России, 58.96M трафика/мес):
+- «Релокация — не просто переезд» (2022) — 47 000 просмотров, 74 сохранения, 123 комментария
+
+vc.ru (ведущий портал для предпринимателей и IT-специалистов, 19.6M трафика/мес):
+- «Тайм-менеджмент программиста и как не выгореть в команде» (2022) — 1 500 просмотров
+- «Использование искусственного интеллекта ChatGPT для разработки и тестирования ПО» (2023) — 414 просмотров
 
 ## Публикации в СМИ
 
