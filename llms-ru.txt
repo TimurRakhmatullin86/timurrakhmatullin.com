@@ -1,0 +1,162 @@
+# Тимур Рахматуллин
+
+> Старший инженер-программист, специализирующийся на распределённых системах, потоковой обработке данных и дата-инжиниринге. Автор опенсорс-инструментов. Исследователь. Stanford Continuing Studies.
+
+## Идентификация
+
+- Полное имя: Тимур Галиевич Рахматуллин
+- Латинское написание: Timur Rakhmatullin
+- Местоположение: Лос-Анджелес, Калифорния, США
+- Email: timur.rakhmatullin86@gmail.com
+- Сайт: https://timurrakhmatullin.com
+- GitHub: https://github.com/TimurRakhmatullin86
+- Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+- ORCID: https://orcid.org/0009-0001-0642-2517
+- Dev.to: https://dev.to/tim860
+
+## Текущая позиция
+
+Старший инженер-программист (Pipelining) в Softline Solutions (https://www.softlinesolutions.com), сентябрь 2026 — наст. время.
+Подразделение Agency Services, группа Data. Лос-Анджелес, Калифорния.
+
+Строит GCP дата-платформу для performance-маркетингового агентства, управляющего paid search, paid social, programmatic, SEO и e-commerce для 1500+ клиентских аккаунтов.
+
+Ключевые достижения:
+- Ingestion-пайплайны на Google Cloud: Pub/Sub → Cloud Functions → BigQuery, 15+ платформенных коннекторов (Google Ads, GA4, Meta, Microsoft Advertising, Amazon Ads), 3+ ГБ/день
+- Высоконагруженные бэкенд-сервисы на Kotlin и Java (Spring Boot, Ktor) — асинхронная обработка, backpressure, идемпотентная запись, мультитенантные нагрузки
+- Фреймворк коннекторов для маркетинговых API: инкрементальная синхронизация, управление rate-limit, эволюция схемы, dead-letter recovery
+- Оптимизация пайплайнов: сокращение end-to-end времени выполнения на 63%
+- Моделирование хранилища BigQuery: партиционированные/кластеризованные таблицы, star-schema, materialized views — сокращение времени запросов на 77%
+- Качество данных: SLA свежести, детекция аномалий, точность сверки 99.6%
+
+## Предыдущий опыт
+
+Старший инженер-программист в MyTona (https://www.mytona.com).
+Игровая компания — разработчик Cooking Diary (22M+ загрузок) и Seekers Notes.
+
+Ключевые достижения:
+- Real-time обработка 50M+ игровых событий в день: Java/Kotlin, Apache Kafka, Apache Flink
+- Масштабируемое data lake на AWS S3 с Apache Spark — 99.9% uptime, улучшение точности KPI на 30%
+- Кастомный портал визуализации данных (аналог Tableau) и внутренние инструменты для QA, Support, HR, тестировщиков
+- Агентные AI-воркфлоу и RAG-системы: LangChain, LangGraph, Langfuse
+- Кастомные MCP-серверы для подачи LLM real-time контекста из PostgreSQL и Redshift
+- Self-service инфраструктура для 100+ инженеров — сокращение time-to-market на 35%
+- ELT-пайплайны: Redshift, BigQuery, Snowflake — сокращение времени генерации отчётов на 60%
+- Мультиоблачное управление (AWS/Azure/GCP) — сокращение deployment lead time на 50%, расходов на инфраструктуру на 20%
+
+## Технический стек
+
+Языки: Java, Kotlin, Python, Rust, Go, SQL
+Данные и стриминг: Apache Kafka, Apache Flink, Apache Airflow, Apache Spark, Debezium CDC, ETL/ELT-пайплайны
+Базы данных: PostgreSQL, MongoDB, Redis, ClickHouse, BigQuery, Redshift, Snowflake
+Инфраструктура: OpenTelemetry, Docker, Kubernetes, CI/CD, AWS, GCP, Azure, Terraform
+AI/ML: LLM-интеграция, MCP Protocol, LangChain, LangGraph, Prompt Security, AI Observability
+Специализации: Game Analytics, Real-Time Processing, Distributed Systems, Backend Architecture, Data Engineering
+
+## Опенсорс-проекты
+
+### TraceShrink
+- URL: https://github.com/TimurRakhmatullin86/traceshrink
+- Язык: Go
+- Описание: Cost-aware процессор для OpenTelemetry Collector. Сохраняет дорогие трейсы, отбрасывает дешёвые — экономия до 98% на хранении. Включает процессор аннотации стоимости LLM-спанов для 2764 моделей.
+- Производительность: 1.84M спанов/сек
+
+### PromptFirewall
+- URL: https://github.com/TimurRakhmatullin86/promptfirewall
+- Языки: Rust, Python (PyO3), Node.js (napi-rs)
+- Описание: Многослойная библиотека детекции prompt injection. Rule-based сканирование — без ML-модели. Мидлвари для FastAPI и Express.
+- Производительность: 11.9мкс на сканирование, 149 тестов
+- Пакеты: crates.io, PyPI, npm
+
+### LogCompress
+- URL: https://github.com/TimurRakhmatullin86/logcompress
+- Язык: Rust
+- Описание: Семантическое сжатие логов для расследования инцидентов. Trace-aware разворачивание собирает все связанные строки по trace ID.
+- Производительность: 100% recall на бенчмарке (55/55 запросов, 5 типов инцидентов)
+
+### CodeShrink
+- URL: https://github.com/TimurRakhmatullin86/codeshrink
+- Языки: Rust, Node.js (napi-rs)
+- Описание: Code-aware компрессор контекста для LLM. Извлекает сигнатуры функций, отбрасывая реализации — 99.9% сжатия (1.29M LOC → 1.5K за 2.8с).
+
+### MCP-Drill
+- URL: https://github.com/TimurRakhmatullin86/mcp-drill
+- Язык: Python
+- Описание: Fault injection и тестирование контрактного соответствия MCP-серверов. Генерирует скоркарды соответствия.
+
+## Вклад в опенсорс
+
+20 принятых pull request-ов в крупные проекты:
+- Apache Airflow (оркестрация): 5 PR
+- Debezium (change data capture): 8 PR
+- Haystack (LLM-фреймворк): 2 PR
+- LangChain4j (Java LLM-фреймворк): 2 PR
+- Quarkus (cloud-native Java): 1 PR
+- Ещё 7 PR на рассмотрении
+
+## Научные публикации
+
+31+ цитирований, 10+ рецензируемых статей.
+Google Scholar: https://scholar.google.com/citations?user=d0nzx0oAAAAJ
+
+Избранные статьи:
+- Сравнительный анализ Apache Kafka и RabbitMQ для распределённых систем (2022) — 12 цитирований
+- Kotlin как язык программирования будущего (2022) — 6 цитирований
+- Оптимизация работы с большими данными в MongoDB: стратегии шардирования (2024) — 5 цитирований
+- Оптимизация потоковой обработки игровых метрик с Apache Flink и Kafka (2024) — 2 цитирования
+- Архитектурные подходы к управлению рентабельностью облачных ресурсов (2026) — 2 цитирования
+- Использование Redis для повышения производительности веб-приложений (2024) — 2 цитирования
+- Модель оценки экономической эффективности гибридной потоковой обработки данных (2025)
+- Применение Kotlin Coroutines для асинхронного программирования (2023)
+- Автоматизация ETL-процессов с использованием Apache Airflow (2024)
+- Основы работы с MongoDB: советы по проектированию схемы данных (2025)
+
+## Образование
+
+- Stanford University — Stanford Continuing Studies, «Large Language Models for Business with Python», Certificate of Completion, зима 2026
+- Южно-Уральский государственный университет — магистр, информатика, 2008
+
+## Награды
+
+- Digital Leaders Award 2023 — Разработчик года (Big Data & Predictive Analytics), оценка жюри 9–10/10
+- Национальная премия «Лучшие Таланты» — Лучший программист (всероссийская)
+- Turing Day Hackathon — Победитель (приз $1000), международный конкурс от Hackathon Raptors
+
+## Судейство
+
+- AITEX Summit Fall 2025 — Судья (международный AI-хакатон, 20 судей из 15 стран)
+- IAHD DEI Web Accessibility Hackathon 2023 — Судья
+- Golden App Award — Судья (2022, 2023), ключевой конкурс мобильных приложений России
+- Премия Рунета 2022 — Член экспертного совета (1135 заявок, 15 номинаций)
+- KROKIT Startup Accelerator — Судья (международный, финансируется ЕС)
+- Борисовский Технопарк — Член экспертного совета (отбор стартапов для резидентуры)
+- Рецензент — журнал «Актуальные исследования» (2022–2026, 5 статей)
+
+## Профессиональное членство
+
+- AITEX — Ассоциация экспертов в области информационных технологий (2025, Associate Member)
+- Hackathon Raptors — Fellow (2024, рецензирование 5+ существующих fellow; участники из Meta, Amazon, NVIDIA, Salesforce)
+- IAHD — Международная ассоциация почётных разработчиков (2023, многоступенчатый отбор; участники из Google, UniCredit)
+- Международная ассоциация IT-специалистов (2023)
+- РАЭК — Российская ассоциация электронных коммуникаций, кластер ИИ (участники: Mail.ru Group, Google, Rambler)
+- Международная ассоциация предпринимателей и руководителей (2023)
+
+## Выступления
+
+- AI Weekend, Лос-Анджелес (2024) — Доклад о применении AI в игровой аналитике
+- Правительственный круглый стол, Россия (2023) — Приглашённый участник по вопросам развития IT-отрасли
+
+## Публикации в СМИ
+
+Интервью и статьи о Тимуре Рахматуллине от независимых журналистов:
+
+- 3DNews (с 1997): «Тимур Рахматуллин: Профессиональный путь бэкенд-разработчика» — 14 ноября 2024, автор: Андрей Созинов
+  https://3dnews.ru/1114582/timur-rahmatullin-professionalniy-put-bekendrazrabotchika
+- TAdviser (#1 портал корпоративных ИТ): «Даже опытным ИТ-специалистам нужно тренировать работу под давлением» — 25 августа 2024, автор: Анатолий Сычёв
+- SecurityLab.ru (Positive Technologies, MOEX: POSI): «Умение расставлять приоритеты — залог успеха!» — 30 октября 2023, автор: Марина Ларикова
+  https://www.securitylab.ru/analytics/543165.php
+- SM News (федеральное информагентство, 7.8M трафика/мес): «Путь успешного программиста» — 10 апреля 2023, автор: Сергей Редчиц
+  https://sm.news/timur-raxmatullin-put-uspeshnogo-programmista-71536/
+- Комсомольская правда (kp.ru, 86.4M просмотров/мес): «В IT-сфере процесс обучения не заканчивается никогда» — 22 декабря 2022, автор: Дмитрий Иванов
+
+Освещение наград: Digital Leaders 2023 — sostav.ru, dp.ru, techinsider.ru, finam.ru, ria.ru, lenta.ru, radiokp.ru; «Лучшие Таланты» — spb.aif.ru, rbc.ru, rambler.ru, tpprf.ru; Turing Day Hackathon — astanahub.com, raptors.dev, startupcentraleurasia.com, grantlar.uz; AITEX Summit 2025 — khaleejtimes.com, techbullion.com, aitex.tech
