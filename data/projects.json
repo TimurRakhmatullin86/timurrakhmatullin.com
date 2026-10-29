@@ -1,0 +1,47 @@
+[
+  {
+    "name": "TraceShrink",
+    "url": "https://github.com/TimurRakhmatullin86/traceshrink",
+    "lang": "Go",
+    "desc": "Cost-aware OpenTelemetry Collector processor. Keeps expensive traces, drops cheap ones — saving up to 98% storage costs. Includes a cost annotation processor that prices LLM spans using embedded pricing data for 2,764 models.",
+    "tags": ["24 tests", "OTel Collector", "LLM Cost"],
+    "accent_tag": "1.84M spans/sec",
+    "added": "2026-09-17"
+  },
+  {
+    "name": "PromptFirewall",
+    "url": "https://github.com/TimurRakhmatullin86/promptfirewall",
+    "lang": "Rust · Python · Node.js",
+    "desc": "Multi-layer prompt injection detection library. Rule-based scanning at 11.9μs per input — no ML model required. Ships as a Rust crate, Python package (PyO3), and npm package (napi-rs) with middleware for FastAPI and Express.",
+    "tags": ["149 tests", "crates.io", "PyPI", "npm"],
+    "accent_tag": "11.9μs / scan",
+    "added": "2026-09-17"
+  },
+  {
+    "name": "LogCompress",
+    "url": "https://github.com/TimurRakhmatullin86/logcompress",
+    "lang": "Rust",
+    "desc": "Semantic log compression for incident investigation. Achieves 100% recall on benchmark (55/55 queries, 5 incident types) with trace-aware expansion that pulls all related log lines by trace ID. Parallel tokenization via Rayon.",
+    "tags": ["34 tests", "crates.io", "SRE / On-call"],
+    "accent_tag": "100% recall",
+    "added": "2026-09-17"
+  },
+  {
+    "name": "CodeShrink",
+    "url": "https://github.com/TimurRakhmatullin86/codeshrink",
+    "lang": "Rust · Node.js",
+    "desc": "Code-aware context compressor for LLMs. Extracts function signatures while discarding implementation details — 99.9% compression on large codebases (1.29M LOC → 1.5K in 2.8s). Helps fit entire repositories into LLM context windows.",
+    "tags": ["16 tests", "crates.io", "npm"],
+    "accent_tag": "99.9% compression",
+    "added": "2026-09-17"
+  },
+  {
+    "name": "MCP-Drill",
+    "url": "https://github.com/TimurRakhmatullin86/mcp-drill",
+    "lang": "Python",
+    "desc": "Fault injection and contract compliance testing for MCP (Model Context Protocol) servers. Verifies that AI tool servers handle edge cases, malformed inputs, and resource limits correctly. Generates compliance scorecards.",
+    "tags": ["PyPI", "GitHub Action", "MCP Protocol"],
+    "accent_tag": "Contract Testing",
+    "added": "2026-09-17"
+  }
+]
