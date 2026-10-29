@@ -1,5 +1,11 @@
 [
   {
+    "year": "2026",
+    "title": "Dublin Hacx 2026 — Judge",
+    "note": "International hackathon at SAP Office Dublin, Oct 3 2026. Evaluated projects across multiple categories.",
+    "added": "2026-10-28"
+  },
+  {
     "year": "2025",
     "title": "AITEX Summit Fall 2025 — Judge",
     "note": "International AI hackathon by the Association of Information Technology Experts. Panel of 20 judges from 15 countries evaluating 8 AI projects.",
@@ -40,5 +46,11 @@
     "title": "Peer Reviewer — Current Research Journal",
     "note": "Reviewed 5 papers on software engineering topics.",
     "added": "2026-09-17"
+  },
+  {
+    "year": "2017",
+    "title": "Suit.by National Fashion Award — Judge",
+    "note": "National award competition. Served on the judging panel evaluating entries.",
+    "added": "2026-10-28"
   }
 ]
