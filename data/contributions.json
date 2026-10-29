@@ -1,0 +1,37 @@
+[
+  {
+    "project": "Debezium",
+    "url": "https://github.com/debezium/debezium",
+    "area": "Change data capture",
+    "merged_prs": 8,
+    "updated": "2026-09-17"
+  },
+  {
+    "project": "Apache Airflow",
+    "url": "https://github.com/apache/airflow",
+    "area": "Workflow orchestration",
+    "merged_prs": 5,
+    "updated": "2026-09-17"
+  },
+  {
+    "project": "Haystack",
+    "url": "https://github.com/deepset-ai/haystack",
+    "area": "LLM framework",
+    "merged_prs": 2,
+    "updated": "2026-09-17"
+  },
+  {
+    "project": "LangChain4j",
+    "url": "https://github.com/langchain4j/langchain4j",
+    "area": "Java LLM framework",
+    "merged_prs": 2,
+    "updated": "2026-09-17"
+  },
+  {
+    "project": "Quarkus",
+    "url": "https://github.com/quarkusio/quarkus",
+    "area": "Cloud-native Java",
+    "merged_prs": 1,
+    "updated": "2026-09-17"
+  }
+]

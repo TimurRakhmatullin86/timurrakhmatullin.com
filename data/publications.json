@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Apache Kafka vs RabbitMQ: Comparative Analysis for Distributed Systems",
+    "year": "2022",
+    "citations": 12,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Kotlin as the Future of Mobile Application Development",
+    "year": "2022",
+    "citations": 6,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "MongoDB Sharding: Performance and Scalability Analysis",
+    "year": "2024",
+    "citations": 5,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Optimization of Real-Time Game Metrics Processing Using Apache Flink and Apache Kafka",
+    "year": "2024",
+    "citations": 2,
+    "venue": "ResearchGate",
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Cloud Resource ROI Optimization",
+    "year": "2026",
+    "citations": 2,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Redis Performance Analysis for Real-Time Systems",
+    "year": "2024",
+    "citations": 2,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Economic Efficiency of Hybrid Stream Processing",
+    "year": "2025",
+    "citations": 0,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "Kotlin Coroutines for Concurrent Programming",
+    "year": "2023",
+    "citations": 0,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "ETL Pipeline Optimization with Apache Airflow",
+    "year": "2024",
+    "citations": 0,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  },
+  {
+    "title": "MongoDB Fundamentals for Modern Applications",
+    "year": "2025",
+    "citations": 0,
+    "venue": null,
+    "url": null,
+    "added": "2026-09-17"
+  }
+]
