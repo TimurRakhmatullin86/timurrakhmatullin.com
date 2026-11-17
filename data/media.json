@@ -91,18 +91,19 @@
     "added": "2026-09-17"
   },
   {
-    "title": "AITEX Summit Fall 2025 — Judge & Association",
+    "title": "AITEX Summit Fall 2025 — Outstanding Mentor Award, Judge & Association",
     "url": null,
-    "venue": "Covered by: khaleejtimes.com, techbullion.com, aitex.tech",
+    "venue": "Covered by: khaleejtimes.com, techbullion.com, aitex.tech, aitexsummit.com",
     "date": "2025",
     "author": null,
     "type": "award_coverage",
     "coverage_links": [
       {"name": "khaleejtimes.com", "url": "https://www.khaleejtimes.com/kt-network/association-of-it-experts-announces-aitex-summit-fall-2025-focused-on-deployable-ai-solutions"},
       {"name": "techbullion.com", "url": "https://techbullion.com/aitex-summit-fall-2025-hackathon-where-real-world-ai-was-put-to-the-test-and-delivered/"},
-      {"name": "aitex.tech", "url": "https://aitex.tech/tpost/6ay2xff4r1-aitex-summit-fall-2025-results"}
+      {"name": "aitex.tech", "url": "https://aitex.tech/tpost/6ay2xff4r1-aitex-summit-fall-2025-results"},
+      {"name": "aitexsummit.com", "url": "https://aitexsummit.com/fall25/awards"}
     ],
-    "added": "2026-09-17"
+    "added": "2026-11-16"
   },
   {
     "title": "Интеграция разрозненных систем безопасности: что работает и где остаётся боль",
